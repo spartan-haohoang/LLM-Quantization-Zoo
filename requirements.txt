@@ -1,0 +1,41 @@
+# Core dependencies for LLM Quantization Zoo
+# For Poetry users, use: poetry install
+# For pip users, use: pip install -r requirements.txt
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Transformers and Model Libraries
+transformers>=4.35.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.0
+sentencepiece>=0.1.99
+protobuf>=4.24.0
+
+# Data Processing
+datasets>=2.14.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Model Hub
+huggingface-hub>=0.19.0
+
+# Jupyter and Notebooks
+jupyter>=1.0.0
+notebook>=7.0.0
+ipywidgets>=8.1.0
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Optional: GPTQ Support (uncomment if needed)
+# auto-gptq>=0.5.0
+
+# Optional: ExLlamaV2 (install separately from GitHub)
+# git+https://github.com/turboderp/exllamav2
+
+# Optional: llama.cpp (install separately)
+# Requires manual compilation from: https://github.com/ggerganov/llama.cpp
+

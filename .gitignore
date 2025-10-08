@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Poetry
+poetry.lock
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Model files (large files)
+*.bin
+*.pt
+*.pth
+*.gguf
+*.safetensors
+*.onnx
+base_model/
+quant/
+*-GPTQ/
+*-GGUF/
+
+# Datasets
+*.parquet
+*.arrow
+*.json.gz
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Docker
+docker-compose.override.yml
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Git LFS
+*.gitattributes
+
+# HuggingFace cache
+.cache/
+transformers_cache/
+

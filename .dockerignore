@@ -1,0 +1,74 @@
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Large model files
+*.bin
+*.pt
+*.pth
+*.gguf
+*.safetensors
+base_model/
+quant/
+*-GPTQ/
+*-GGUF/
+
+# Datasets
+*.parquet
+*.arrow
+*.json.gz
+
+# Data directory
+data/
+
+# Logs
+logs/
+*.log
+
+# Documentation (build from source)
+docs/_build/
+
+# Test files
+tests/
+.pytest_cache/
+
+# CI/CD
+.github/
+
+# Environment
+.env
+.env.local
+
+# Temporary
+tmp/
+temp/
+*.tmp
+

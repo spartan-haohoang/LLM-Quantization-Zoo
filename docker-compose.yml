@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  llm-quantization-zoo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: llm-quantization-zoo:latest
+    container_name: llm-quantization-zoo
+    
+    # GPU support (requires nvidia-docker)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    
+    ports:
+      - "8888:8888"  # Jupyter Notebook
+    
+    volumes:
+      # Mount notebooks directory
+      - ./notebooks:/workspace/notebooks
+      # Mount scripts directory
+      - ./scripts:/workspace/scripts
+      # Mount data directory for models and datasets
+      - ./data:/workspace/data
+      # Cache for HuggingFace models
+      - huggingface-cache:/root/.cache/huggingface
+    
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=0
+      - TRANSFORMERS_CACHE=/root/.cache/huggingface
+      - HF_HOME=/root/.cache/huggingface
+    
+    # Keep container running
+    tty: true
+    stdin_open: true
+    
+    # Network mode
+    network_mode: bridge
+    
+    # Resource limits (adjust based on your system)
+    shm_size: '16gb'
+    
+    # Restart policy
+    restart: unless-stopped
+
+volumes:
+  huggingface-cache:
+    driver: local
+
