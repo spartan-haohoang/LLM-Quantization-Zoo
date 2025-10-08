@@ -86,15 +86,6 @@ ExLlamaV2 is renowned for being one of the fastest inference libraries available
 
 ---
 
-## 🙏 Acknowledgements
-
-A special thanks to **Maxime Labonne** for creating the original notebooks and tutorials that form the basis of this collection. Please check out his work:
-
--   **GitHub**: [mlabonne/llm-course](https://github.com/mlabonne/llm-course)
--   **Blog**: [Maxime Labonne's Blog](https://mlabonne.github.io/blog/)
-
----
-
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
